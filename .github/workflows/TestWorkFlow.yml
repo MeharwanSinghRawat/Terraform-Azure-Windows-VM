@@ -1,0 +1,21 @@
+name: MehartestPipeline
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+  id-token: read
+jobs:
+  terraformInstall:
+  name: Terraform Install
+  runs-on: self-hosted
+  steps:
+  -  name: Terraform Install
+     run: echo This event is a pull request that had an assignee removed.
+
+
+  
+
+  
+    
