@@ -5,7 +5,7 @@ on:
 jobs:
   build:
     runs-on: MeharGit
-      steps:
-      -  name: Run a one-line script
-         run: echo Hello, world!
+    steps:
+    -  name: Run a one-line script
+       run: echo Hello, world!
 
