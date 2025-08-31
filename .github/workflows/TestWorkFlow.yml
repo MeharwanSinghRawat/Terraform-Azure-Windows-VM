@@ -11,8 +11,15 @@ jobs:
     name: Terraform Install
     runs-on: self-hosted
     steps:
-      -  name: Terraform Install
-         run: echo "This event is a pull request that had an assignee removed."
+    -  name: Azure Login
+       uses: Azure/login@v2.3.0
+       with:
+         client-id: a18497a0-b870-4bc6-a061-e829c4bfad4b
+         tenant-id: d55ca9e2-2a3f-46a9-ba3c-3f6d6eae23ab
+         subscription-id: f47677a8-89c6-4bf2-b96b-8bbcdd5fb6d9
+       
+            
+         
 
 
      
