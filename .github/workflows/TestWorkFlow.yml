@@ -1,11 +1,11 @@
-name: MehartestPipeline
+name: "mehartestPipeline"
 on:
   push:
     branches:
       - main
 permissions:
-  contents: write
-  id-token: read
+  contents: read
+  id-token: write
 jobs:
   terraformInstall:
   name: Terraform Install
