@@ -1,11 +1,25 @@
+# name: CI
+# on:
+#   push:
+#     branches: [ "main" ]
+# jobs: 
+#   build
+#   runs-on: MeharGit
+#   steps:
+#   -  name: Run a one-line script
+#      run: echo Hello, world!
+
 name: CI
+
 on:
   push:
     branches: [ "main" ]
+
 jobs: 
-  build
-  runs-on: MeharGit
-  steps:
-  -  name: Run a one-line script
-     run: echo Hello, world!
+  build:                 # 👈 yaha "build" ek job ka naam hai
+    runs-on: ubuntu-latest   # 👈 "MeharGit" nahi chalega jab tak aapne custom runner set nahi kiya ho
+    steps:
+      - name: Run a one-line script
+        run: echo "Hello, world!"
+
 
