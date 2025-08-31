@@ -8,11 +8,15 @@ permissions:
   id-token: write
 jobs:
   terraformInstall:
-  name: Terraform Install
-  runs-on: self-hosted
-  steps:
-  -  name: Terraform Install
-     run: echo This event is a pull request that had an assignee removed.
+    name: Terraform Install
+    runs-on: self-hosted
+    steps:
+      -  name: Terraform Install
+         run: echo "This event is a pull request that had an assignee removed."
+
+
+     
+
 
 
   
